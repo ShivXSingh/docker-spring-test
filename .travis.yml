@@ -9,3 +9,4 @@ services:
 
 script:
 - gradle clean build buildDocker
+- docker run -d -p 8780:8780 -t docker-spring-test/fee-service:0.1.0
