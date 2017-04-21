@@ -7,6 +7,13 @@ sudo: required
 services:
 - docker
 
+addons:
+  sonarqube:
+    organization: "homeofficedummy" # the key of the org you chose at step #3
+
+  - sonar-scanner
+
 script:
+- sonar-scanner
 - gradle clean build buildDocker
 - docker run -d -p 8780:8780 -t docker-spring-test/fee-service:0.1.0
