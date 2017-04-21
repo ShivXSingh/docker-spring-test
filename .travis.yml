@@ -9,9 +9,10 @@ services:
 
 addons:
   sonarqube:
-    organization: "homeofficedummy" # the key of the org you chose at step #3
+    organization: "homeofficedummy"
+    token:
+      secure: 9f314c6df15fcee823864624216e6a2837a1c8e5
 
-  - sonar-scanner
 
 script:
 - sonar-scanner
