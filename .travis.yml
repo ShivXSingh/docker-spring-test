@@ -12,6 +12,8 @@ addons:
     organization: "homeofficedummy"
     token:
       secure: 9f314c6df15fcee823864624216e6a2837a1c8e5
+    branches:
+    - adding_travis_file
 
 
 script:
